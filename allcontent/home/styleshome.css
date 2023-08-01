@@ -1,0 +1,275 @@
+:root {
+  --pramary-bg: #000000;
+  --text-span: #2688d4;
+  --links: #bf8717;
+  --links-active: #bfb117;
+  --secondary-bg: #afafaf;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--pramary-bg);
+  width: 100%;
+  padding: 10px;
+}
+
+.links-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links-menu li {
+  margin-left: 60px;
+  margin-right: 40px;
+}
+
+.links-menu li:first-child {
+  margin-left: 0;
+}
+
+.links-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  
+}
+
+.links-menu li a:hover {
+  color: var(--links);
+  transition: .5s
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+.home div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .first-div {
+  background-color: #000000;
+}
+
+.home .first-div p {
+  color: white;
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.home .first-div p span {
+  color: var(--text-span);
+}
+
+.home .first-div p .span-red {
+  color: red !important;
+}
+
+.home  .second-div {
+  background-color: var(--secondary-bg);
+}
+
+.home .second-div span {
+  font-size: 2rem;
+}
+
+.projects {
+  background-color: var(--pramary-bg);
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.about {
+  display: flex;
+  height: 100vh;
+}
+
+.about div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .first-div-about {
+  background-color: var(--secondary-bg);
+}
+
+.about .second-div {
+  background-color: var(--pramary-bg);
+}
+
+.about {
+  display: flex;
+  height: 100vh;
+}
+
+.about .first-div-about,
+.about .second-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .first-div-about {
+  background-color: var(--secondary-bg);
+}
+
+.about .second-div {
+  background-color: var(--pramary-bg);
+}
+
+.about .card-about {
+  width: 80%;
+  max-height: 290px; /* Diminuindo a altura do card */
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .card-about h3 {
+  
+  font-size: 20px;
+  color: #333;
+}
+
+.about .card-about p {
+  margin-top: 25px;
+  color: #666;
+  text-align: justify;
+}
+
+.about .second-div img {
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.contact-content {
+  display: flex;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.contact-header {
+  flex: 1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--pramary-bg);
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-list li a {
+  color: var(--pramary-bg);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list li a i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-list li a:hover {
+  color: var(--links-active);
+  transition: 0.5s;
+}
+
+
+

@@ -1,0 +1,54 @@
+:root {
+  --pramary-bg: #000000;
+  --text-span: #2688d4;
+  --links: #bf8717;
+  --links-active: #bfb117;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+span {
+  color: var(--text-span);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--links);
+}
+
+a:active {
+  color: var(--links-active);
+}
+
+a:hover {
+  opacity: .5;
+}

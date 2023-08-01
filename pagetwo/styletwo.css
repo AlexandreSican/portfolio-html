@@ -1,0 +1,59 @@
+:root {
+  --pramary-bg: #000000;
+  --text-span: #2688d4;
+  --links: #bf8717;
+  --links-active: #bfb117;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.text {
+  color: white;
+  width: 30%;
+}
+
+.image-myself {
+  width: 30%;
+}
+
+.image-myself img {
+  width: 400px;
+}
+
+span {
+  color: var(--text-span);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--links);
+  text-transform: uppercase;
+}
+
+a:active {
+  color: var(--links-active);
+}
+
+a:hover {
+  opacity: .5;
+}
